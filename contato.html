@@ -1,3 +1,92 @@
+Google Sala de Aula
+Google Sala de Aula
+Programacao Front-End - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+Início
+Agenda
+Inscrito
+Pendentes
+E
+Educacao Financeira - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+L
+Lingua Portuguesa - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+L
+Lingua Inglesa - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+C
+Ciencias Da Computacao - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+A
+Analise E Projeto De Sistemas - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+P
+Projeto De Vida - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+Q
+Quimica - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+B
+Banco De Dados - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+H
+Historia - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+P
+Programacao Mobile - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+S
+Sociologia - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+M
+Matematica - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+G
+Geografia - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+B
+Biologia - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+P
+Programacao Front-End - 2º Ano B Manha - Médio Integrado
+JOSE BALAN, C E VER-EF M PROFIS
+Turmas arquivadas
+Configurações
+2 Tri: Barbearia Alura, Contato
+2 Tri: Barbearia Alura, Contato
+GUILHERME PEREIRA CAMPOS
+•
+10 de ago. (editado: 12:26)
+100 pontos
+
+GitHub - GuilhermePCampos/Balan_BarbeariaAlura: Projeto da Barbearia Alura do curso de programação Front end,
+https://github.com/GuilhermePCampos/Balan_BarbeariaAlura/tree/main
+
+Workspace - Visual Studio Code
+https://vscode.dev/
+
+Login – Vercel
+https://vercel.com/dashboard
+
+GitHub: Let’s build from here · GitHub
+https://github.com/
+
+contato.html
+HTML
+
+style.css
+Folha de estilo
+2 comentários para a turma
+
+GUILHERME PEREIRA CAMPOS11 de ago.
+/aboutInput.html
+
+GUILHERME PEREIRA CAMPOS12:26
+/contato.html
+Seus trabalhos
+Atribuído
+Comentários particulares
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,39 +113,82 @@
   </header>
 
   <main class="contato">
-    <h1>Formulario de contato</h1>
+    <div class="contatoo">
+      <h1>Formulario de contato</h1>
 
-    <form action="">
-      <label for="nomesobrenome">Nome Completo</label>
-      <input type="text" id="nomesobrenome" class="input-padrao">
+      <form action="">
+        <fieldset>
+          <label for="nomesobrenome">Nome Completo</label>
+          <input type="text" id="nomesobrenome" class="input-padrao"
+           placeholder="Guilherme Pereira Campos" required>
 
-      <label for="email">Email</label>
-      <input type="text" id="email" class="input-padrao">
+          <label for="email">Email</label>
+          <input type="text" id="email" class="input-padrao" 
+          placeholder="nomedoemail@dominio.com.br" required>
 
-      <label for="telefone">Telefone</label>
-      <input type="text" id="telefone" class="input-padrao">
+          <label for="telefone">Telefone</label>
+          <input type="text" id="telefone" class="input-padrao" 
+          placeholder="(xx) xxxxx-xxxx" required>
 
+          <label for="mensagem">Mensagem</label>
+          <textarea cols="70" rows="10" id="mensagem" class="input-padrao" 
+          placeholder="Digite sua mensagem.">
+          </textarea>
+        </fieldset>
 
-      <label for="mensagem">Mensagem</label>
-      <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+        <div class="contato">
+          <legend class="teste" id="testee">Como prefere ser atendido ?</legend>
+          <label for="radio-email"><input type="radio" name="contato" id="radio-email">Email</label>
+          <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Telefone</label>
+          <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp" checked>Whatsapp</label>
 
-      <!-- Botão Radio -->
-      <div class="tipo-contato">
-        <p>O prefere o nosso contato ?</p>
-        <label for="radio-email"><input type="radio" name="contato" id="radio-email">Email</label>
-        <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Telefone</label>
-        <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp">Whatsapp</label>
-      </div>
+          <fieldset>
+            <legend>Qual horário prefere ser atendido?</legend>
+            <select>
+              <option value="manha">Manhã</option>
+              <option value="tarde">Tarde</option>
+              <option value="noite">Noite</option>              
+            </select>
 
+            <label for="checkbox" class="checkbox">
+              <input type="checkbox" name="" id="checkbox">
+              Gostaria de receber nossas novidades por email?
+            </label>
+          </fieldset>
 
-      <label for="checkbox" class="checkbox">
-        <input type="checkbox" name="" id="checkbox">
-        Gostaria de receber nossas novidades por email?
-      </label>
+          <input type="submit" value="Enviar Formulário" class="enviar">
+          <div>
+            <p>Horário de atendimento</p>
+            
+            <table>
+              <thead>
+                <th>Dia</td>
+                <th>Horário</td>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Segunda</td>
+                  <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                  <td>Quarta</td>
+                  <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                  <td>Sexta</td>
+                  <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                  <td>Sabado</td>
+                  <td>8h ~ 18h</td>
+                </tr>
+              </tbody>              
+            </table>
+          </div>
+        </div>
+      </form>
+    </div>
 
-      <input type="submit" value="Enviar Formulario" class="input-padrao">
-
-    </form>
 
   </main>
 
